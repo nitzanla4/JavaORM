@@ -6,9 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Repositiory {
+public class Repositiory<T> {
+    private Class<T> clz;
+    public Repositiory(Class <T> clz) {
+        this.clz=clz;
+    }
 
-    public static <T> void executeQuery(Class <T> clz)
+    public List <T> executeQuery()
     {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
