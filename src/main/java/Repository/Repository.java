@@ -20,6 +20,7 @@ public class Repository<T> {
     }
 
 
+
     public ResultSet openConnectionToDB() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",  "root", "mydbuser");
