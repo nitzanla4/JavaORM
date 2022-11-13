@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.Optional;
 
 
-public class Repositiory<T> {
+public class Repository<T> {
     private Class<T> clz;
     private Connection con=null;
     private Statement statement=null;
     private ResultSet resultSet=null;
     private PreparedStatement preparedStatement = null;
 
-    public Repositiory(Class <T> clz) {
+    public Repository(Class <T> clz) {
         this.clz=clz;
     }
 
@@ -45,6 +45,8 @@ public class Repositiory<T> {
             resultSet= openConnectionToDB();
 
             List<T> results= new ArrayList<>();
+
+
             while (resultSet.next()) {
                 results.add(createObject());
             }
@@ -76,6 +78,8 @@ public class Repositiory<T> {
             while (resultSet.next()) {
                  return (Optional<T>) Optional.of(createObject());
             }
+
+
             con.close();
         }
         catch (Exception exception) {
