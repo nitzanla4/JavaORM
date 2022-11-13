@@ -9,11 +9,11 @@ import java.util.Optional;
 
 
 public class Repository<T> {
-    private Class<T> clz;
-    private Connection con=null;
-    private Statement statement=null;
-    private ResultSet resultSet=null;
-    private PreparedStatement preparedStatement = null;
+    Class<T> clz;
+    Connection con=null;
+    Statement statement=null;
+    ResultSet resultSet=null;
+    PreparedStatement preparedStatement = null;
 
     public Repository(Class <T> clz) {
         this.clz=clz;
@@ -27,7 +27,7 @@ public class Repository<T> {
         return statement.executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
     }
 
-    private T createObject () throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
+    T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
         Constructor<T> constructor= clz.getConstructor(null);
         T item= constructor.newInstance();
         Field[] declaredFields= clz.getDeclaredFields();
@@ -45,7 +45,6 @@ public class Repository<T> {
             resultSet= openConnectionToDB();
 
             List<T> results= new ArrayList<>();
-
 
             while (resultSet.next()) {
                 results.add(createObject());
@@ -78,8 +77,6 @@ public class Repository<T> {
             while (resultSet.next()) {
                  return (Optional<T>) Optional.of(createObject());
             }
-
-
             con.close();
         }
         catch (Exception exception) {
