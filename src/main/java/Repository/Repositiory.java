@@ -6,11 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Repositiory {
+public class Repositiory<T> {
+    private Class<T> clz;
+    public Repositiory(Class <T> clz) {
+        this.clz=clz;
+    }
 
-    public static <T> void executeQuery(Class <T> clz)
+    /*
+    TODO: implement this method instead the big one
+    public T findOne(){
+        Con.open(
+        );
+
+    }*/
+
+    public List <T> executeQuery()
     {
         try {
+            //TODO: move the code to another function
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con= DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/mydb",
@@ -21,6 +34,8 @@ public class Repositiory {
 
             List<T> results= new ArrayList<>();
             while (resultSet.next()) {
+
+                //TODO: move the code to another function
                 Constructor<T> constructor= clz.getConstructor(null);
                 T item= constructor.newInstance();
                 Field[] declaredFields= clz.getDeclaredFields();
@@ -35,6 +50,7 @@ public class Repositiory {
         catch (Exception exception) {
             System.out.println(exception);
         }
+        return null;
     }
 }
 
