@@ -12,9 +12,18 @@ public class Repositiory<T> {
         this.clz=clz;
     }
 
+    /*
+    TODO: implement this method instead the big one
+    public T findOne(){
+        Con.open(
+        );
+
+    }*/
+
     public List <T> executeQuery()
     {
         try {
+            //TODO: move the code to another function
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con= DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/mydb",
@@ -25,6 +34,8 @@ public class Repositiory<T> {
 
             List<T> results= new ArrayList<>();
             while (resultSet.next()) {
+
+                //TODO: move the code to another function
                 Constructor<T> constructor= clz.getConstructor(null);
                 T item= constructor.newInstance();
                 Field[] declaredFields= clz.getDeclaredFields();
@@ -39,6 +50,7 @@ public class Repositiory<T> {
         catch (Exception exception) {
             System.out.println(exception);
         }
+        return null;
     }
 }
 
