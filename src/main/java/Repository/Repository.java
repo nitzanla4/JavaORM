@@ -37,12 +37,11 @@ public class Repository<T> {
         return item;
     }
 
-    public List <T> executeQuery(String sqlQuery)
-    {
+    public List <T> executeQuery(String sqlQuery) throws SQLException, ClassNotFoundException {
+        openConnectionToDB();
         List<T> results= new ArrayList<>();
         try {
             resultSet=  statement.executeQuery(sqlQuery);
-
             while (resultSet.next()) {
                 results.add(createObject());
             }
@@ -55,8 +54,7 @@ public class Repository<T> {
     }
 
 
-    public List<T> findAll ()
-    {
+    public List<T> findAll () throws SQLException, ClassNotFoundException {
         return executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
     }
 
@@ -76,7 +74,7 @@ public class Repository<T> {
         try {
             openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(),id));
-            ResultSet myRes= preparedStatement.executeQuery();
+            ResultSet myRes= preparedStatement.executeQuery(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(),id));
             while (resultSet.next()) {
                  return createObject();
             }
