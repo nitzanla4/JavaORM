@@ -40,14 +40,14 @@ public class Repository<T> {
     }
 
 
-    public List <T> executeQuery()
-    {
+    public List <T> executeQuery(Statement query) throws SQLException {
+
+        List<T> results= new ArrayList<>();
         try {
-            resultSet= openConnectionToDB();
-
-            List<T> results= new ArrayList<>();
-
+            openConnectionToDB();
+            statement.executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
             while (resultSet.next()) {
+
                 results.add(createObject());
             }
             close();
@@ -55,7 +55,7 @@ public class Repository<T> {
         catch (Exception exception) {
             System.out.println(exception);
         }
-        return null;
+        return results;
     }
 
     private void close() {
