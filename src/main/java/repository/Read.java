@@ -1,9 +1,8 @@
 package repository;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Read<T> extends Repository<T> {
 
@@ -20,9 +19,13 @@ public class Read<T> extends Repository<T> {
         List<T> res= (List<T>) executeQuery(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(), id));
         return (T) res.stream().findFirst();
     }
+    public <T,K> Optional<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
+        List<T> res= (List<T>) executeQuery(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
+        return res.stream().findFirst();
+    }
 
 
-    public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
+    /*public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
         try {
             openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
@@ -38,9 +41,7 @@ public class Read<T> extends Repository<T> {
             System.out.println(exception);
         }
         return null;
-    }
-
-
+    }*/
 
 
 }
