@@ -18,10 +18,9 @@ public class Repository<T> {
         this.clz=clz;
     }
 
-
     public static void openConnectionToDB() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con= DriverManager.getConnection("jdbc:mysql://localhost:3307/mydb",  "root", "mydbuser");
+        con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",  "root", "mydbuser");
         statement=con.createStatement();
     }
     public static <T> T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
@@ -52,7 +51,7 @@ public class Repository<T> {
     }
 
 
-    private static void close() {
+    protected static void close() {
         try {
             if (resultSet != null)
                 resultSet.close();
