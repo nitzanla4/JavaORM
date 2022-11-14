@@ -1,5 +1,6 @@
 package repository;
 
+import java.lang.reflect.Field;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,7 +12,6 @@ public class Read<T> extends Repository<T> {
         super(clz);
     }
 
-
     public List<T> findAll () throws SQLException, ClassNotFoundException {
         return executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
     }
@@ -21,23 +21,12 @@ public class Read<T> extends Repository<T> {
         return (T) res.stream().findFirst();
     }
 
+    public <T,K> List<T> findByProperty (K property) throws SQLException, ClassNotFoundException {
 
-    public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
-        try {
-            openConnectionToDB();
-            preparedStatement= con.prepareStatement(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
-            ResultSet myRes= preparedStatement.executeQuery();
-            List<T> results= new ArrayList<>();
-            while (resultSet.next()) {
-                results.add((T) createObject());
-            }
-            con.close();
-            return results;
-        }
-        catch (Exception exception) {
-            System.out.println(exception);
-        }
-        return null;
+            String str1 ="select * from "+this.clz.getSimpleName().toLowerCase() + " where id = " +property;
+            List<T> res= executeQuery(str1);
+            if (res!= null) return res;
+            else return null;
     }
 
 

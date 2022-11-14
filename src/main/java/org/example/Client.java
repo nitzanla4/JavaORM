@@ -11,9 +11,12 @@ public class Client {
         Repository<User> userRepository= new Repository<>(User.class);
         Read<User> read= new Read<>(User.class);
         List<User> users=read.findAll();
-
         users.forEach(user-> System.out.println(user.toString()));
+        System.out.println("---BY ID--------------------------------------");
         System.out.println(read.findOneById(2));
+        System.out.println("---BY Property--------------------------------------");
+
+        System.out.println(read.findByProperty(2));
 
 
 

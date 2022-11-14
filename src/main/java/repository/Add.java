@@ -1,11 +1,13 @@
 //package Repository;
 //
+//import repository.Repository;
+//
 //import java.lang.reflect.Field;
 //import java.sql.PreparedStatement;
 //import java.sql.SQLException;
 //import java.util.List;
 //
-//public class Add<T> extends RepositoryFacade<T> {
+//public class Add<T> extends Repository<T> {
 //
 //    public Add(Class<T> clz) {
 //        super(clz);
