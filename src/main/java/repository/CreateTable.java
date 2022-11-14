@@ -16,9 +16,8 @@ public class CreateTable<T> extends Repository<T> {
         for (Field field : declaredFields) {
             field.setAccessible(true);
             column.put(field.getName(), field.get(entity).toString());
-            System.out.println("Variable type: "+field.getClass().getSimpleName()+" Variable name: "+field.getName()+"value: "+ field.get(entity).toString());
+            System.out.println("Variable type: "+field.getType().getSimpleName()+" ,Variable name: "+field.getName()+" ,Value: "+ field.get(entity).toString());
         }
-
     }
 
 }
