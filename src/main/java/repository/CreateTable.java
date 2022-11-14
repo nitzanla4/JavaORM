@@ -22,6 +22,7 @@ public class CreateTable<T> extends Repository<T> {
         close();
     }
 
+
     private String getStringQuery(T entity) throws IllegalAccessException {
         String tableName= entity.getClass().getSimpleName().toLowerCase();
         List<Column> column= new ArrayList<>();
