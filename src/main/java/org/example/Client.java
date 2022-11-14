@@ -40,6 +40,14 @@ public class Client {
 
     //System.out.println("----Multi DELETE-------------------------------------");
     //delete.deleteMultipleItem("Yaffa", "name");
+        System.out.println("-------------create new table: ");
+        /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
+        createUserTable.createNewTable(yossi);*/
+
+
+        CreateTable<Animal> createAnimalTable= new CreateTable<>(Animal.class);
+        Animal dog=new Animal(1,"Dogi", 3, "Home");
+        createAnimalTable.createNewTable(dog);
 
 
     }
