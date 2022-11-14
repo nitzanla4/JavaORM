@@ -1,4 +1,7 @@
 package repository;
+
+import io.github.cdimascio.dotenv.Dotenv;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -9,25 +12,30 @@ import java.util.List;
 
 public class Repository<T> {
     static Class<?> clz;
-    static Connection con=null;
-    static Statement statement=null;
-    static ResultSet resultSet=null;
+    static Connection con = null;
+    static Statement statement = null;
+    static ResultSet resultSet = null;
+
     PreparedStatement preparedStatement = null;
 
-    public Repository(Class <T> clz) {
-        this.clz=clz;
+    private static Dotenv dotenv = Dotenv.load();
+
+    public Repository(Class<T> clz) {
+        this.clz = clz;
     }
 
     public static void openConnectionToDB() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con= DriverManager.getConnection("jdbc:mysql://localhost:3307/mydb",  "root", "mydbuser");
-        statement=con.createStatement();
+        String url = "jdbc:mysql://" + dotenv.get("HOST") + ":" + dotenv.get("PORT") + "/" + dotenv.get("DB");
+        con = DriverManager.getConnection(url, dotenv.get("USER"), dotenv.get("PASSWORD"));
+        statement = con.createStatement();
     }
+
     public static <T> T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
-        Constructor<?> constructor= clz.getConstructor(null);
-        T item= (T) constructor.newInstance();
-        Field[] declaredFields= clz.getDeclaredFields();
-        for (Field field: declaredFields) {
+        Constructor<?> constructor = clz.getConstructor(null);
+        T item = (T) constructor.newInstance();
+        Field[] declaredFields = clz.getDeclaredFields();
+        for (Field field : declaredFields) {
             field.setAccessible(true);
             field.set(item, resultSet.getObject(field.getName()));
         }
@@ -36,20 +44,18 @@ public class Repository<T> {
 
     public static <T> List<T> executeQuery(String sqlQuery) throws SQLException, ClassNotFoundException {
         openConnectionToDB();
-        List<T> results= new ArrayList<>();
+        List<T> results = new ArrayList<>();
         try {
-            resultSet=  statement.executeQuery(sqlQuery);
+            resultSet = statement.executeQuery(sqlQuery);
             while (resultSet.next()) {
                 results.add((T) createObject());
             }
             close();
-        }
-        catch (Exception exception) {
+        } catch (Exception exception) {
             System.out.println(exception);
         }
         return results;
     }
-
 
 
     protected static void close() {
@@ -63,8 +69,6 @@ public class Repository<T> {
         } catch (Exception e) {
         }
     }
-
-
 }
 
 
