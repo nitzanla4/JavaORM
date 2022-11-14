@@ -9,6 +9,9 @@ public class RepositoryFacade<T> {
     ResultSet resultSet=null;
     PreparedStatement preparedStatement = null;
 
+    private Repository<T> repository;
+
+
     public RepositoryFacade(Class <T> clz) {
         this.clz=clz;
     }

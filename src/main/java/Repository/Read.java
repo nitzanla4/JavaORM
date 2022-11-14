@@ -12,25 +12,25 @@ public class Read<T> extends Repository<T> {
     }
 
 
-    public <T> Optional<T> findOneById (int id) throws SQLException, ClassNotFoundException {
+    public T findOneById (int id) throws SQLException, ClassNotFoundException {
         try {
-            resultSet= openConnectionToDB();
+            openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(),id));
             ResultSet myRes= preparedStatement.executeQuery();
             while (resultSet.next()) {
-                return (Optional<T>) Optional.of(createObject());
+                return createObject();
             }
             con.close();
         }
         catch (Exception exception) {
             System.out.println(exception);
         }
-        return Optional.empty();
+        return null;
     }
 
     public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
         try {
-            resultSet= openConnectionToDB();
+            openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
             ResultSet myRes= preparedStatement.executeQuery();
             List<T> results= new ArrayList<>();

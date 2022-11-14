@@ -20,12 +20,10 @@ public class Repository<T> {
     }
 
 
-
-    public ResultSet openConnectionToDB() throws ClassNotFoundException, SQLException {
+    public void openConnectionToDB() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",  "root", "mydbuser");
         statement=con.createStatement();
-        return statement.executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
     }
 
     T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
@@ -39,13 +37,11 @@ public class Repository<T> {
         return item;
     }
 
-
-    public List <T> executeQuery()
+    public List <T> executeQuery(String sqlQuery)
     {
+        List<T> results= new ArrayList<>();
         try {
-            resultSet= openConnectionToDB();
-
-            List<T> results= new ArrayList<>();
+            resultSet=  statement.executeQuery(sqlQuery);
 
             while (resultSet.next()) {
                 results.add(createObject());
@@ -55,7 +51,13 @@ public class Repository<T> {
         catch (Exception exception) {
             System.out.println(exception);
         }
-        return null;
+        return results;
+    }
+
+
+    public List<T> findAll ()
+    {
+        return executeQuery(String.format("select * from %s", this.clz.getSimpleName().toLowerCase()));
     }
 
     private void close() {
@@ -70,26 +72,26 @@ public class Repository<T> {
         }
     }
 
-    public <T> Optional<T> findOnebyId (int id) throws SQLException, ClassNotFoundException {
+    public T findOnebyId (int id) throws SQLException, ClassNotFoundException {
         try {
-            resultSet= openConnectionToDB();
+            openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(),id));
             ResultSet myRes= preparedStatement.executeQuery();
             while (resultSet.next()) {
-                 return (Optional<T>) Optional.of(createObject());
+                 return createObject();
             }
             con.close();
         }
         catch (Exception exception) {
             System.out.println(exception);
         }
-        return Optional.empty();
+        return null;
     }
 
 
     public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
         try {
-            resultSet= openConnectionToDB();
+            openConnectionToDB();
             preparedStatement= con.prepareStatement(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
             ResultSet myRes= preparedStatement.executeQuery();
             List<T> results= new ArrayList<>();
