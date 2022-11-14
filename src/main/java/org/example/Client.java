@@ -21,10 +21,12 @@ public class Client {
 
 
         System.out.println("-------------add new user: ");
+
         Add<User> add= new Add<>(User.class);
         User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
-        /*add.addSingleItem(yossi);
 
+        /*
+        add.addSingleItem(yossi);
 
         System.out.println("-------------add list of users: ");
         List<User> userList= new ArrayList<>();
@@ -34,8 +36,15 @@ public class Client {
 
 
         System.out.println("-------------create new table: ");
-        CreateTable<User> createTable= new CreateTable<>(User.class);
-        createTable.createNewTable(yossi);
+        /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
+        createUserTable.createNewTable(yossi);*/
+
+
+        CreateTable<Animal> createAnimalTable= new CreateTable<>(Animal.class);
+        Animal dog=new Animal(1,"Dogi", 3, "Home");
+        createAnimalTable.createNewTable(dog);
+
+
 
 
 
