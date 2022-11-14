@@ -17,8 +17,34 @@ public class Client {
 
         users.forEach(user-> System.out.println(user.toString()));
         System.out.println(read.findOneById(2));
-        System.out.println("---By property---------------");
-        System.out.println(read.findByProperty("Hadi" , "name"));
+        //System.out.println(read.findOneByProperty("Hadi"));
+
+
+        System.out.println("-------------add new user: ");
+
+        Add<User> add= new Add<>(User.class);
+        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
+
+        /*
+        add.addSingleItem(yossi);
+
+        System.out.println("-------------add list of users: ");
+        List<User> userList= new ArrayList<>();
+        userList.add(new User(11,"Yaffa","yaffa@gmail.com","456789"));
+        userList.add(new User(12,"Sarah","sarah@gmail.com","456789"));
+        add.addMultipleItem(userList);*/
+
+
+        System.out.println("-------------create new table: ");
+        /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
+        createUserTable.createNewTable(yossi);*/
+
+
+        CreateTable<Animal> createAnimalTable= new CreateTable<>(Animal.class);
+        Animal dog=new Animal(1,"Dogi", 3, "Home");
+        createAnimalTable.createNewTable(dog);
+
+
 
 
 
