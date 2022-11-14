@@ -19,29 +19,19 @@ public class Read<T> extends Repository<T> {
         List<T> res= (List<T>) executeQuery(String.format("select * from %s where id= %d", this.clz.getSimpleName().toLowerCase(), id));
         return (T) res.stream().findFirst();
     }
-    public <T,K> Optional<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
-        List<T> res= (List<T>) executeQuery(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
-        return res.stream().findFirst();
+
+
+    public <T,K> List<T> findByProperty (K property , String colName) throws SQLException, ClassNotFoundException {
+        String str= "select * from " +this.clz.getSimpleName().toLowerCase() + " where "+ colName+ " = ";
+
+        if (property.getClass()== String.class)
+            str += "'"+ property+"'";
+        else str+= property;
+
+        System.out.println(str);
+        return executeQuery(str);
+
     }
-
-
-    /*public <T,K> List<T> findOneByProperty (K property) throws SQLException, ClassNotFoundException {
-        try {
-            openConnectionToDB();
-            preparedStatement= con.prepareStatement(String.format("select * from {0} where property= {1}",this.clz.getSimpleName().toLowerCase(),property));
-            ResultSet myRes= preparedStatement.executeQuery();
-            List<T> results= new ArrayList<>();
-            while (resultSet.next()) {
-                results.add((T) createObject());
-            }
-            con.close();
-            return results;
-        }
-        catch (Exception exception) {
-            System.out.println(exception);
-        }
-        return null;
-    }*/
 
 
 }
