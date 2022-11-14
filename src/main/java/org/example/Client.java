@@ -20,7 +20,7 @@ public class Client {
 
 //        System.out.println("-------------add new user: ");
         Add<User> add = new Add<>(User.class);
-//        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
+        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
 //        add.addSingleItem(yossi);
 //
 //        users.forEach(user-> System.out.println(user.toString()));
@@ -51,6 +51,11 @@ public class Client {
 
         Update<User> update = new Update<>(User.class);
         update.updateByProperty("Hadis", "name", 2);
+
+
+        //facade
+        DBFacade<User> dbFacade= new DBFacade<>(User.class);
+        dbFacade.add.addSingleItem(yossi);
     }
 }
 

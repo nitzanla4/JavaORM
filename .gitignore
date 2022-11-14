@@ -2,4 +2,4 @@ target/
 .idea/
 *.idea
 *.class
-.env
+src/main/java/.env

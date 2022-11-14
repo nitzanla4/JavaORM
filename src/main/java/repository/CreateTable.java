@@ -1,59 +1,66 @@
 package repository;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.Column;
-
 import java.lang.reflect.Field;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 
 public class CreateTable<T> extends Repository<T> {
     public CreateTable(Class<T> clz) {
         super(clz);
     }
-// Create a table based on an entity
+    private static Logger logger = LogManager.getLogger(CreateTable.class.getName());
 
-    public void createNewTable(T entity) throws IllegalAccessException, SQLException, ClassNotFoundException {
-        openConnectionToDB();
-        String query= getStringQuery(entity);
-        statement.executeUpdate(query);
-        close();
+    public void createNewTable(T entity) throws ClassNotFoundException {
+        try {
+            openConnectionToDB();
+            String query= getStringQuery(entity);
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            logger.error("SQL Exception");
+            e.printStackTrace();
+        }
+        closeConnectionToDB();
     }
 
-
-    private String getStringQuery(T entity) throws IllegalAccessException {
+    private String getStringQuery(T entity)  {
         String tableName= entity.getClass().getSimpleName().toLowerCase();
-        List<Column> column= new ArrayList<>();
-        //HashMap<String, String> column= new List<String, String>();
+        List<Column> columns= new ArrayList<>();
 
         Field[] declaredFields = clz.getDeclaredFields();
         String type;
         for (Field field : declaredFields) {
             field.setAccessible(true);
-            type=field.getType().getSimpleName();
-
-            if(field.getType().isAssignableFrom(String.class)){
-                type="longtext";
-            }
-
-            System.out.println("Variable type: "+type+" ,Variable name: "+field.getName()+" ,Value: "+ field.get(entity).toString());
-            column.add(new Column(type,field.getName() ));
+            type=typeValidation(field);
+            columns.add(new Column(type,field.getName() ));
         }
 
+        String query = createQueryString(tableName,columns);
+        return query;
+    }
 
-        System.out.println("columns: "+column);
+    private String createQueryString(String tableName, List<Column> columns) {
 
         String query = "create table " + tableName+ " ( ";
-        for(Column col: column){
+        for(Column col: columns){
             query += col.getName() + " " + col.getType() +" , ";
         }
-
         query=query.substring(0, query.length()-2); //remove last ,
         query+= " ) ";
-        System.out.println("query : " + query);
         return query;
+    }
+
+    private String typeValidation(Field field){
+        String type=field.getType().getSimpleName();
+
+        if(field.getType().isAssignableFrom(String.class)){
+            logger.info("String type cast to longtext");
+            type="longtext";
+        }
+        return type;
     }
 
 

@@ -1,33 +1,41 @@
 package repository;
 import java.lang.reflect.Field;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Add<T> extends Repository<T> {
-
+    private static Logger logger = LogManager.getLogger(Add.class.getName());
     public Add(Class<T> clz) {
         super(clz);
     }
 
-    //---add---
-    public void addSingleItem(T item) throws SQLException, ClassNotFoundException, IllegalAccessException {
+    public void addSingleItem(T item) throws ClassNotFoundException, IllegalAccessException {
         openConnectionToDB();
         add(item);
-        close();
+        closeConnectionToDB();
     }
 
-
-    public void addMultipleItem(List<T> items) throws SQLException, ClassNotFoundException, IllegalAccessException {
+    public void addMultipleItem(List<T> items) throws ClassNotFoundException, IllegalAccessException {
         openConnectionToDB();
         for(T item:items){
             add(item);
         }
-        close();
+        closeConnectionToDB();
     }
 
-    public void add(T item) throws SQLException, IllegalAccessException {
-        //example: statement.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'Simpson', 'Mr.', 'Springfield', 2001)");
+    public void add(T item) throws IllegalAccessException {
+        String SQL_Statement= createAddSQLStatement(item);
+        try {
+            statement.executeUpdate(SQL_Statement);
+        } catch (SQLException e) {
+            logger.error("cant executeUpdate the statement SQL Exception");
+            e.printStackTrace();
+        }
+    }
+
+    private String createAddSQLStatement(T item) throws IllegalAccessException {
         String SQL_Statement = String.format("INSERT INTO %s ", this.clz.getSimpleName().toLowerCase());
         SQL_Statement += "VALUES(";
 
@@ -39,9 +47,7 @@ public class Add<T> extends Repository<T> {
         }
         SQL_Statement=SQL_Statement.substring(0, SQL_Statement.length() - 1); //remove last ,
         SQL_Statement += ")";
-        System.out.println(SQL_Statement);
-        statement.executeUpdate(SQL_Statement);
-     //   close();
+        return SQL_Statement;
     }
 }
 
