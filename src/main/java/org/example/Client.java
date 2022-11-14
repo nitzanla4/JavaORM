@@ -1,6 +1,7 @@
 package org.example;
 
 import repository.Add;
+import repository.CreateTable;
 import repository.Read;
 import repository.Repository;
 
@@ -22,15 +23,21 @@ public class Client {
         System.out.println("-------------add new user: ");
         Add<User> add= new Add<>(User.class);
         User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
-        add.addSingleItem(yossi);
+        /*add.addSingleItem(yossi);
 
 
         System.out.println("-------------add list of users: ");
-
         List<User> userList= new ArrayList<>();
         userList.add(new User(11,"Yaffa","yaffa@gmail.com","456789"));
         userList.add(new User(12,"Sarah","sarah@gmail.com","456789"));
-        add.addMultipleItem(userList);
+        add.addMultipleItem(userList);*/
+
+
+        System.out.println("-------------create new table: ");
+        CreateTable<User> createTable= new CreateTable<>(User.class);
+        createTable.createNewTable(yossi);
+
+
 
     }
 }
