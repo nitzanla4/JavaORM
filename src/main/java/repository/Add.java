@@ -41,30 +41,7 @@ public class Add<T> extends Repository<T> {
         SQL_Statement += ")";
         System.out.println(SQL_Statement);
         statement.executeUpdate(SQL_Statement);
-        close();
+     //   close();
     }
-
-
-/*
-    //---update---
-
-    public void update(T item ) throws SQLException {
-        //TODO- implement again
-        String sql =
-                "UPDATE GLOBALSETTINGS " +
-                        "  SET settingValue = ? " +
-                        "WHERE settingName = ?";
-        PreparedStatement pstmt = con.prepareStatement(sql);
-
-        Field[] declaredFields = clz.getDeclaredFields();
-
-        int i=0;
-        for (Field field : declaredFields) {
-            pstmt.setString(++i, field.getName());
-        }
-        pstmt.executeUpdate();
-    }
-*/
-
 }
 
