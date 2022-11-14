@@ -20,7 +20,7 @@ public class Repository<T> {
 
     public static void openConnectionToDB() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",  "root", "mydbuser");
+        con= DriverManager.getConnection("jdbc:mysql://localhost:3307/mydb",  "root", "mydbuser");
         statement=con.createStatement();
     }
     public static <T> T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
