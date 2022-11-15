@@ -3,12 +3,14 @@ package org.example.entities;
 import java.util.Objects;
 
 public class Animal {
-    int id;
-    String name;
-    int age;
-    String habitat;
+    private final int id;
+    private String name;
+    private int age;
+    private String habitat;
 
-    public Animal() {}
+    public Animal(int id) {
+        this.id = id;
+    }
     public static class Builder{
         //Required Parameters
         private final int id;
@@ -44,9 +46,6 @@ public class Animal {
         this.habitat = builder.habitat;
     }
 
-    public Animal(int id){
-        this.id=id;
-    }
     public Animal(int id, String name, int age, String habitat) {
         this.id = id;
         this.name = name;
