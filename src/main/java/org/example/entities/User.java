@@ -18,6 +18,9 @@ public class User {
         private String email=null;
         private String password=null;
 
+
+
+
         public Builder(int id){
             this.id=id;
         }
@@ -47,8 +50,8 @@ public class User {
 
 
 
-    public User(int id) {
-        this.id = id;
+    public User() {
+        this.id =0;
     }
 
     public User(int id, String name, String email, String password) {
