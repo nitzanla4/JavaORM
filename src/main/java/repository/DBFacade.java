@@ -16,11 +16,12 @@ public class DBFacade<T> {
         return clz;
     }
 
-    public <T> void addSingleItem(Class<T> clz,T item) {
+
+    public <T> void addSingleItem(Class<?> clz, T item ) {
         Add.addSingleItem(clz, item);
     }
 
-    public void addMultipleItem(List<T> items) {
+    public void addMultipleItem(Class<?> clz,List<T> items) {
         Add.addMultipleItem(clz, items);
     }
 

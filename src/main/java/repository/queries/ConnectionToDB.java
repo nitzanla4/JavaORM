@@ -13,6 +13,10 @@ public class ConnectionToDB {
 
     private static Logger logger = LogManager.getLogger(ConnectionToDB.class.getName());
 
+    public static Dotenv getDotenv() {
+        return dotenv;
+    }
+
 
     public static Connection openConnectionToDB() {
         //Class.forName("com.mysql.cj.jdbc.Driver");
