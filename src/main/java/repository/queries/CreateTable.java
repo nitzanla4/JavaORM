@@ -4,29 +4,29 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.entities.Column;
 import java.lang.reflect.Field;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateTable<T> extends Repository<T> {
-    public CreateTable(Class<T> clz) {
-        super(clz);
-    }
+public class CreateTable {
     private static Logger logger = LogManager.getLogger(CreateTable.class.getName());
 
-    public void createNewTable(T entity) throws ClassNotFoundException {
-        try {
-            openConnectionToDB();
-            String query= getStringQuery(entity);
+    private static Statement statement = null;
+
+    public static <T> void createNewTable(Class<?> clz, T entity) {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            String query = getStringQuery(clz, entity);
             statement.executeUpdate(query);
         } catch (SQLException e) {
-            logger.error("SQL Exception");
+            logger.error("cant execute Update the statement SQL Exception");
             e.printStackTrace();
         }
-        closeConnectionToDB();
     }
 
-    private String getStringQuery(T entity)  {
+    private static <T> String getStringQuery(Class<?> clz, T entity)  {
         String tableName= entity.getClass().getSimpleName().toLowerCase();
         List<Column> columns= new ArrayList<>();
 
@@ -42,7 +42,7 @@ public class CreateTable<T> extends Repository<T> {
         return query;
     }
 
-    private String createQueryString(String tableName, List<Column> columns) {
+    private static String createQueryString(String tableName, List<Column> columns) {
 
         String query = "create table " + tableName+ " ( ";
         for(Column col: columns){
@@ -53,7 +53,7 @@ public class CreateTable<T> extends Repository<T> {
         return query;
     }
 
-    private String typeValidation(Field field){
+    private static String typeValidation(Field field){
         String type=field.getType().getSimpleName();
 
         if(field.getType().isAssignableFrom(String.class)){
@@ -62,7 +62,4 @@ public class CreateTable<T> extends Repository<T> {
         }
         return type;
     }
-
-
-
 }

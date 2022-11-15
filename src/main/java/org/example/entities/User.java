@@ -4,14 +4,14 @@ import java.util.Objects;
 
 public class User {
 
-    private final int id;
+    private int id;
     private String name;
     private String email;
     private String password;
 
     public static class Builder{
         //Required Parameters
-        private final int id;
+        private int id;
         //Optional Parameters
         private String name=null;
         private String email=null;
@@ -44,8 +44,6 @@ public class User {
         this.password = builder.password;
     }
 
-
-
     public User() {}
 
     public User(int id, String name, String email, String password) {
@@ -76,5 +74,21 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, email, password);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
