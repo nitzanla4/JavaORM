@@ -1,6 +1,9 @@
 package org.example;
 
+import org.example.entities.Animal;
+import org.example.entities.User;
 import repository.*;
+import repository.queries.*;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -43,7 +46,10 @@ public class Client {
         System.out.println("-------------create new table: ");
         /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
         createUserTable.createNewTable(yossi);*/
-
+//facade
+        DBFacade<User> dbFacade= new DBFacade<>(User.class);
+        dbFacade.add.addSingleItem(yossi);
+        dbFacade.delete.deleteEntireTable("animal");
 
         CreateTable<Animal> createAnimalTable = new CreateTable<>(Animal.class);
         Animal dog = new Animal(1, "Dogi", 3, "Home");
@@ -53,9 +59,7 @@ public class Client {
         update.updateByProperty("Hadis", "name", 2);
 
 
-        //facade
-        DBFacade<User> dbFacade= new DBFacade<>(User.class);
-        dbFacade.add.addSingleItem(yossi);
+
     }
 }
 

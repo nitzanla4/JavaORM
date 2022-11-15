@@ -1,8 +1,8 @@
-package repository;
+package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.Column;
+import org.example.entities.Column;
 import java.lang.reflect.Field;
 import java.sql.SQLException;
 import java.util.ArrayList;

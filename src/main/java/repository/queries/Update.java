@@ -1,8 +1,8 @@
-package repository;
+package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.sql.SQLException;
+
 import java.util.List;
 
 public class Update<T> extends Repository<T>{
@@ -12,10 +12,15 @@ public class Update<T> extends Repository<T>{
     private static Logger logger = LogManager.getLogger(Update.class.getName());
 
 
-    public <T,K> void updateOneByProperty (K property , String colName, int id) throws ClassNotFoundException {
-        openConnectionToDB();
-        updateByProperty(property,colName, id);
-        closeConnectionToDB();
+    public <T,K> void updateOneByProperty (K property , String colName, int id)  {
+        try {
+            openConnectionToDB();
+            updateByProperty(property,colName, id);
+            closeConnectionToDB();
+        } catch (ClassNotFoundException e) {
+            logger.error("class not found!");
+            e.printStackTrace();
+        }
     }
 
     public <T,K> List<T> updateByProperty (K property , String colName, int id) throws ClassNotFoundException {

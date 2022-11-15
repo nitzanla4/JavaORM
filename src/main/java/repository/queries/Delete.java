@@ -1,4 +1,4 @@
-package repository;
+package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -46,8 +46,8 @@ public class Delete<T> extends Repository<T>{
 //
 //    }
 
-    public void deleteEntireTable()  {
-        String str= "drop table " +this.clz.getSimpleName().toLowerCase();
+    public void deleteEntireTable(String tableName)  {
+        String str= "drop table "+tableName;
         try {
             statement= (Statement) con.createStatement();
             statement.executeUpdate(str);

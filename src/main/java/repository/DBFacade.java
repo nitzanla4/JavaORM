@@ -1,6 +1,6 @@
 package repository;
 
-import java.sql.*;
+import repository.queries.*;
 
 public class DBFacade<T> {
     Class<T> clz;

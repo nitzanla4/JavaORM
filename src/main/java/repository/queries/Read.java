@@ -1,11 +1,10 @@
-package repository;
+package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Optional;
 
 public class Read<T> extends Repository<T> {
 

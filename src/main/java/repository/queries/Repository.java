@@ -1,4 +1,4 @@
-package repository;
+package repository.queries;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.logging.log4j.LogManager;
