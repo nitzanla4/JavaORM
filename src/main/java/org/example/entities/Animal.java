@@ -9,6 +9,40 @@ public class Animal {
     String habitat;
 
     public Animal() {}
+    public static class Builder{
+        //Required Parameters
+        private final int id;
+        //Optional Parameters
+        private String name=null;
+        private int age=0;
+        private String habitat=null;
+
+        public Builder(int id){
+            this.id=id;
+        }
+        public Builder name(String name){
+            this.name=name;
+            return this;
+        }
+        public Builder email(int age){
+            this.age=age;
+            return this;
+        }
+        public Builder habitat(String habitat){
+            this.habitat=habitat;
+            return this;
+        }
+        public Animal build(){
+            return new Animal(this);
+        }
+    }
+
+    private  Animal(Builder builder){
+        this.id = builder.id;
+        this.name = builder.name;
+        this.age=builder.age;
+        this.habitat = builder.habitat;
+    }
 
     public Animal(int id, String name, int age, String habitat) {
         this.id = id;
