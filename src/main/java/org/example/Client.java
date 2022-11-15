@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.entities.Animal;
+import org.example.entities.Movie;
 import org.example.entities.User;
 import repository.DBFacade;
 
@@ -8,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, IllegalAccessException {
+    public static void main(String[] args) {
 
         DBFacade<User> dbFacade= new DBFacade<>(User.class);
 
@@ -39,16 +41,18 @@ public class Client {
 ////        dbFacade.delete.deleteMultipleItem("Yaffa", "name");
 
 //        System.out.println("-------------delete entire table: ");
-//        dbFacade.delete.deleteEntireTable("animal");
+        dbFacade.deleteEntireTable("animal");
 
-
+        Movie movie = new Movie(1, "aaa");
+        dbFacade.createNewTable(movie);
 
 //
 //        System.out.println("-------------create new table: ");
-//        dbFacade.createTable.createNewTable(yossi); //by User
-//        Animal dog = new Animal(1, "Dogi", 3, "Home");
-//        dbFacade.createTable.createNewTable(dog);
+        dbFacade.createNewTable(yossi); //by User
+        Animal dog = new Animal(1, "Dogi", 3, "Home");
+        dbFacade.createNewTable(dog);
 //
+        //dbFacade.deleteEntireTable("animal");
 //
         System.out.println("-------------update by property: ");
         dbFacade.updateOneByProperty("name", "Hadis", "name", "Hadi");

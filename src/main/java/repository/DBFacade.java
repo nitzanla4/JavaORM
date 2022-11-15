@@ -41,5 +41,13 @@ public class DBFacade<T> {
     {
         Update.updateOneByProperty(clz, colName, property, filterBy, filterValue);
     }
+
+    public <T> void createNewTable(T newTable) {
+        CreateTable.createNewTable(clz, newTable);
+    }
+
+    public <T> void deleteEntireTable(String tableName) {
+        Delete.deleteEntireTable(tableName);
+    }
 }
 
