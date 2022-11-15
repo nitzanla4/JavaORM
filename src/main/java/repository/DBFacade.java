@@ -16,6 +16,7 @@ public class DBFacade<T> {
         return clz;
     }
 
+
     public <T> void addSingleItem(Class<?> clz, T item ) {
         Add.addSingleItem(clz, item);
     }
