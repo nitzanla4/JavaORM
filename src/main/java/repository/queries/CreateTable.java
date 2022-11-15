@@ -89,7 +89,6 @@ public class CreateTable<T> extends Repository<T> {
                     return "NOT NULL UNIQUE";
                 }
             }
-
         }
         return null;
     }
