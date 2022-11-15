@@ -3,32 +3,30 @@ package repository.queries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.List;
 
-public class Update<T> extends Repository<T>{
-    public Update(Class<T> clz) {
-        super(clz);
-    }
+public class Update {
+
     private static Logger logger = LogManager.getLogger(Update.class.getName());
 
+    private static Statement statement = null;
 
-    public <T,K> void updateOneByProperty (String colName, T property, String filterBy, K filterValue)  {
-        try {
-            openConnectionToDB();
-            updateByProperty(colName, property, filterBy, filterValue);
-            closeConnectionToDB();
-        } catch (ClassNotFoundException e) {
-            logger.error("class not found!");
-            e.printStackTrace();
+    public static <T,K> void updateOneByProperty (Class<?> clz, String colName, T property, String filterBy, K filterValue)  {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            statement.executeUpdate(updateByProperty(clz, colName, property, filterBy, filterValue));
         } catch (SQLException e) {
+            logger.error("cant execute Update the statement SQL Exception");
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public <T,K> void updateByProperty (String colName, T property, String filterBy, K filterValue) throws ClassNotFoundException, SQLException {
-        String str= "UPDATE " + this.clz.getSimpleName().toLowerCase() +
+    public static <T,K> String updateByProperty (Class<?> clz, String colName, T property, String filterBy, K filterValue) throws ClassNotFoundException, SQLException {
+        String str= "UPDATE " + clz.getSimpleName().toLowerCase() +
                 " SET " + colName + "=";
         if(property.getClass() == String.class)  {
             str += "'" + property + "'";
@@ -39,10 +37,6 @@ public class Update<T> extends Repository<T>{
             str += "'" + filterValue + "'";
         }
         else str += filterValue;
-
-        System.out.println(str);
-        statement= (Statement) con.createStatement();
-        int rows = statement.executeUpdate(str);
-        System.out.println("Rows impacted : " + rows );
+        return str;
     }
 }

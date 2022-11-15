@@ -1,169 +1,297 @@
-2022-11-15 09:30:32,439 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:30:32,468 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,469 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,469 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,469 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,470 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,470 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,470 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,470 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,470 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,471 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,471 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,471 INFO    repository.queries.Repository - object created!
-2022-11-15 09:30:32,473 INFO    repository.queries.Repository - connection close!
-2022-11-15 09:30:32,545 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:30:32,439 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:30:32,468 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,469 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,469 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,469 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,470 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,470 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,470 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,470 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,470 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,471 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,471 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,471 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:30:32,473 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:30:32,545 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
 2022-11-15 09:30:32,570 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 09:30:32,571 INFO    repository.queries.Repository - connection close!
-2022-11-15 09:30:32,610 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:30:32,571 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:30:32,610 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
 2022-11-15 09:30:32,611 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 09:30:32,612 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 09:30:32,649 ERROR   repository.queries.CreateTable - SQL Exception
-2022-11-15 09:30:32,652 INFO    repository.queries.Repository - connection close!
-2022-11-15 09:30:32,729 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:30:32,770 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:33:37,673 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:33:37,694 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,694 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,694 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,694 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,695 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,695 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,695 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,695 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,695 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,696 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,696 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,696 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:33:37,698 INFO    repository.queries.Repository - connection close! 
-2022-11-15 09:33:37,742 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:30:32,652 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:30:32,729 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:30:32,770 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:33:37,673 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:33:37,694 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,694 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,694 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,694 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,695 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,695 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,695 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,695 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,695 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,696 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,696 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,696 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:33:37,698 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:33:37,742 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
 2022-11-15 09:33:37,759 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 09:33:37,760 INFO    repository.queries.Repository - connection close! 
-2022-11-15 09:33:37,801 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:33:37,760 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:33:37,801 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
 2022-11-15 09:33:37,804 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 09:33:37,804 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 09:33:37,826 ERROR   repository.queries.CreateTable - SQL Exception
-2022-11-15 09:33:37,828 INFO    repository.queries.Repository - connection close! 
-2022-11-15 09:33:37,889 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:33:37,927 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:36:59,883 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 09:36:59,908 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,908 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,908 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,908 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,908 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,909 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,909 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,909 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,909 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,910 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,910 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,910 INFO    repository.queries.Repository - object created! 
-2022-11-15 09:36:59,912 INFO    repository.queries.Repository - connection close! 
-2022-11-15 09:36:59,964 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:33:37,828 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:33:37,889 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:33:37,927 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:36:59,883 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 09:36:59,908 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,908 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,908 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,908 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,908 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,909 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,909 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,909 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,909 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,910 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,910 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,910 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 09:36:59,912 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:36:59,964 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
 2022-11-15 09:36:59,976 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 09:36:59,977 INFO    repository.queries.Repository - connection close! 
-2022-11-15 09:37:00,008 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3306/mydb
-2022-11-15 10:13:11,511 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:13:11,534 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,535 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,535 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,535 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,536 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,536 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,536 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,537 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,537 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,538 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:13:11,539 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:13:11,589 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 09:36:59,977 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 09:37:00,008 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3306/mydb
+2022-11-15 10:13:11,511 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:13:11,534 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,535 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,535 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,535 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,536 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,536 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,536 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,537 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,537 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,538 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:13:11,539 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:13:11,589 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 10:13:11,602 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 10:13:11,602 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:13:11,635 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:18:36,132 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:18:36,154 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,154 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,155 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,155 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,155 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,155 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,156 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,156 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,156 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,156 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:18:36,158 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:18:36,204 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:18:36,218 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:18:36,248 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:13:11,602 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:13:11,635 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:18:36,132 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:18:36,154 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,154 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,155 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,155 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,155 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,155 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,156 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,156 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,156 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,156 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:18:36,158 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:18:36,204 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:18:36,218 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:18:36,248 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 10:18:36,263 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 10:18:36,264 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:21:44,750 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:21:44,795 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,795 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,796 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,796 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,797 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,797 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,798 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,798 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,798 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,799 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,799 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:21:44,800 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:21:44,874 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:18:36,264 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:21:44,750 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:21:44,795 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,795 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,796 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,796 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,797 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,797 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,798 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,798 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,798 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,799 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,799 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:21:44,800 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:21:44,874 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 10:21:44,912 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
 2022-11-15 10:21:44,916 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 10:21:44,917 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:21:44,966 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:21:44,917 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:21:44,966 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 10:21:44,999 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
-2022-11-15 10:21:45,001 INFO    repository.queries.Repository - connection close! 
-2022-11-15 10:55:55,072 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 10:55:55,090 INFO    repository.queries.Repository - object created! 
-2022-11-15 10:55:55,091 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:07:12,017 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:07:12,032 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:11:59,644 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:21:45,001 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 10:55:55,072 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:55:55,090 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 10:55:55,091 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:07:12,017 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:07:12,032 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:11:59,644 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 11:11:59,665 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 11:11:59,667 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:12:18,672 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:12:18,688 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:07,740 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:11:59,667 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:12:18,672 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:12:18,688 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:07,740 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 11:14:07,762 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 11:14:07,764 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:07,790 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:14:07,800 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:27,774 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:14:27,790 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:27,811 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:07,764 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:07,790 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:07,800 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:27,774 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:27,790 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:27,811 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 11:14:27,823 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
 2022-11-15 11:14:27,825 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 11:14:27,826 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:44,312 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:14:44,327 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:14:44,349 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:14:44,355 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:18:51,638 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:27,826 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:44,312 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:44,327 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:14:44,349 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:44,355 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:18:51,638 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 11:18:51,657 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 11:18:51,659 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:18:51,680 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:18:51,659 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:18:51,680 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 11:18:51,683 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
 2022-11-15 11:18:51,684 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
-2022-11-15 11:18:51,685 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:18:51,705 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:18:51,716 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:19:25,002 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:19:25,017 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:19:25,038 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:19:25,043 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:19:25,068 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:19:25,082 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:20:39,120 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:20:39,134 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:20:39,156 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:20:39,161 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:20:39,181 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:20:39,193 INFO    repository.queries.Repository - connection close! 
-2022-11-15 11:21:41,211 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
-2022-11-15 11:21:41,227 INFO    repository.queries.Repository - object created! 
-2022-11-15 11:21:41,229 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:18:51,685 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:18:51,705 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:18:51,716 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:19:25,002 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,017 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:19:25,038 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,043 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:19:25,068 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,082 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:20:39,120 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,134 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:20:39,156 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,161 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:20:39,181 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,193 INFO    repository.queries.ConnectionToDB - connection close!
+2022-11-15 11:21:41,211 INFO    repository.queries.ConnectionToDB - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:21:41,227 INFO    repository.queries.ConnectionToDB - object created!
+2022-11-15 11:21:41,229 INFO    repository.queries.ConnectionToDB - connection close!
 2022-11-15 11:27:10,902 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:34:23,705 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:34:50,350 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,364 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,365 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,400 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:35:37,362 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,372 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,373 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,406 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 18:39:14,104 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:39:14,107 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:56:08,297 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,308 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:08,312 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,603 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,619 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,901 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:19,912 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,920 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,929 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,947 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:42,950 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,975 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:03:43,444 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,453 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,454 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,468 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:03:43,473 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,507 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:04:39,373 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,398 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,399 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,403 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,844 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,864 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,874 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,879 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,932 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,925 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,977 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,816 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,837 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,842 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type

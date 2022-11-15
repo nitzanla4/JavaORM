@@ -1,35 +1,40 @@
 package repository.queries;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entities.Primary;
-import org.example.entities.Unique;
 
-public class Add<T> extends Repository<T> {
+public class Add {
     private static Logger logger = LogManager.getLogger(Add.class.getName());
-    public Add(Class<T> clz) {
-        super(clz);
-    }
+    private static Statement statement = null;
 
-    public void addSingleItem(T item) throws ClassNotFoundException, IllegalAccessException {
-        openConnectionToDB();
-        add(item);
-        closeConnectionToDB();
-    }
-
-    public void addMultipleItem(List<T> items) throws ClassNotFoundException, IllegalAccessException {
-        openConnectionToDB();
-        for(T item:items){
-            add(item);
+    public static <T> void addSingleItem(Class<?> clz, T item) {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            add(clz, item);
+        } catch (SQLException | IllegalAccessException e) {
+            logger.error("cant execute Update the statement SQL Exception");
+            e.printStackTrace();
         }
-        closeConnectionToDB();
     }
 
-    public void add(T item) throws IllegalAccessException {
-        String SQL_Statement= createAddSQLStatement(item);
+    public static <T> void addMultipleItem(Class<?> clz, List<T> items) {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            for (T item : items) {
+                add(clz, item);
+            }
+        } catch (SQLException | IllegalAccessException e) {
+            logger.error("cant execute Update the statement SQL Exception");
+            e.printStackTrace();
+        }
+    }
+
+    public static <T> void add(Class<?> clz, T item) throws IllegalAccessException {
+        String SQL_Statement= createAddSQLStatement(clz, item);
         try {
             statement.executeUpdate(SQL_Statement);
         } catch (SQLException e) {
@@ -38,22 +43,19 @@ public class Add<T> extends Repository<T> {
         }
     }
 
-    private String createAddSQLStatement(T item) throws IllegalAccessException {
-        String SQL_Statement = String.format("INSERT INTO %s ", this.clz.getSimpleName().toLowerCase());
+    private static <T> String createAddSQLStatement(Class<?> clz, T item) throws IllegalAccessException {
+        String SQL_Statement = String.format("INSERT INTO %s ", clz.getSimpleName().toLowerCase());
         SQL_Statement += "VALUES(";
+
         Field[] declaredFields = clz.getDeclaredFields();
         for (Field field : declaredFields) {
-            SQL_Statement+="'";
             field.setAccessible(true);
-            SQL_Statement += field.get(item);
-            SQL_Statement +="',";
+            System.out.println(field + ", " + item);
+            SQL_Statement += field.get(item) + ",";
         }
-
         SQL_Statement=SQL_Statement.substring(0, SQL_Statement.length() - 1); //remove last ,
         SQL_Statement += ")";
         return SQL_Statement;
     }
-
-
 }
 
