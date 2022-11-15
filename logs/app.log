@@ -295,3 +295,24 @@
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:10,930 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 21:12:10,963 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:10,963 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:10,963 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:10,963 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:10,965 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:10,965 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:10,976 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 21:12:11,011 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,012 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:11,012 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,013 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:11,013 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,013 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:11,016 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 21:12:11,052 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,052 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:11,052 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,052 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:12:11,053 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:12:11,053 INFO    repository.queries.CreateTable - field is not primitive type

@@ -16,7 +16,7 @@ public class DBFacade<T> {
         return clz;
     }
 
-    public <T> void addSingleItem(T item, User yossi) {
+    public <T> void addSingleItem(Class<T> clz,T item) {
         Add.addSingleItem(clz, item);
     }
 
