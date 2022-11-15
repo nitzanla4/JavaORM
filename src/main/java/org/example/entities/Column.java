@@ -15,14 +15,6 @@ public class Column {
         this.annotation=annotation;
     }
 
-    @Override
-    public String toString() {
-        return "Column{" +
-                "type='" + type + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
     public String getType() {
         return type;
     }

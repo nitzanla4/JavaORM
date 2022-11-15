@@ -71,6 +71,10 @@ public class CreateTable<T> extends Repository<T> {
             logger.info("String type cast to longtext");
             type="longtext";
         }
+        if(!field.getType().isPrimitive()){
+            logger.info("field is not primitive type");
+            type="json";
+        }
         return type;
     }
     private String addAnnotation(Field field){
