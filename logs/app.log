@@ -295,3 +295,281 @@
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 13:34:23,705 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:34:50,350 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,364 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,365 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,400 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:35:37,362 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,372 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,373 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,406 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 18:39:14,104 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:39:14,107 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:56:08,297 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,308 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:08,312 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,603 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,619 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,901 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:19,912 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,920 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,929 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,947 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:42,950 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,975 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:03:43,444 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,453 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,454 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,468 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:03:43,473 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,507 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:04:39,373 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,398 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,399 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,403 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,844 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,864 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,874 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,879 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,932 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,925 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,977 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,816 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,837 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,842 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,655 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 21:26:26,727 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,728 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,728 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,728 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,731 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,732 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,753 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 21:26:26,796 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,797 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,797 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,797 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,797 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,798 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,800 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 21:26:26,835 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,836 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,836 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,836 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,836 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 21:26:26,837 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 21:26:26,838 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 13:34:23,705 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:34:50,350 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,364 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,365 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:34:50,400 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 13:35:37,362 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,372 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,373 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 13:35:37,406 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
+2022-11-15 18:39:14,104 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:39:14,107 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 18:56:08,297 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,308 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:08,312 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:08,313 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,603 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,609 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,619 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:56:48,625 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,901 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:19,912 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,920 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:19,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,929 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,947 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 18:59:42,950 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,951 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 18:59:42,975 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:03:43,444 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,452 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,453 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,454 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,468 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:03:43,473 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:03:43,474 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:03:43,507 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:04:39,373 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,395 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,398 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,399 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,403 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:04:39,409 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,844 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,864 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,874 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,879 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,891 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,892 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,894 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,932 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:05:47,933 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,925 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,938 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,940 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,968 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,977 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:08:52,986 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,816 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,827 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,828 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,837 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,841 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,842 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,846 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-15 19:16:44,847 INFO    repository.queries.CreateTable - field is not primitive type

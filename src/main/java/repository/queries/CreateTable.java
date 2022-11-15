@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class CreateTable {
@@ -32,17 +33,26 @@ public class CreateTable {
 
     private static <T> String getStringQuery(Class<?> clz, T entity)  {
         String tableName= entity.getClass().getSimpleName().toLowerCase();
-        List<Column> columns= new ArrayList<>();
+        HashMap<String,String> columns=new HashMap<>();
+        String query = "create table " + tableName+ " ( ";
+
         Field[] declaredFields = clz.getDeclaredFields();
         String type;
         String annotation;
+
         for (Field field : declaredFields) {
             field.setAccessible(true);
             type = typeValidation(field);
+            query += type + " " + field.getName();
+
             annotation = addAnnotation(field);
-            columns.add(new Column(type, field.getName(), annotation ));
+            if(annotation!=null){
+                query +=annotation;
+            }
+            query +=" , ";
         }
-        String query = createQueryString(tableName,columns);
+        query=query.substring(0, query.length()-2); //remove last ,
+        query+= " ) ";
         return query;
     }
 
@@ -67,17 +77,22 @@ public class CreateTable {
             logger.info("field is not primitive type");
             type="json";
         }
+        if(field.getType().isInstance(int.class)){
+            logger.info("field is not primitive type");
+            type="INTEGER";
+        }
+
         return type;
     }
     private static String addAnnotation(Field field){
         Annotation[] annotations= field.getAnnotations();
         for(Annotation annotation:annotations){
             if(annotation instanceof Primary){
-                return "NOT NULL PRIMARY KEY AUTO_INCREMENT";
+                return " NOT NULL PRIMARY KEY AUTO_INCREMENT";
             }
             else{
                 if(annotation instanceof Unique){
-                    return "NOT NULL UNIQUE";
+                    return " NOT NULL UNIQUE";
                 }
             }
         }
