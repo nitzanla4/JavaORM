@@ -1,54 +1,45 @@
 package repository;
 
+import org.example.entities.User;
 import repository.queries.*;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class DBFacade<T> {
-    Class<T> clz;
-
-    private Read read;
-    private Add add;
-    private Update update;
-    private Delete delete;
-    private CreateTable createTable;
+    private Class<?> clz;
 
     public DBFacade(Class<T> clz) {
         this.clz = clz;
-        this.read = new Read<>(clz);
-        this.add = new Add<>(clz);
-        this.update = new Update<>(clz);
-        this.delete = new Delete<>(clz);
-        this.createTable = new CreateTable<>(clz);
     }
 
-
-    public <T> void addSingleItem(T item) throws ClassNotFoundException, IllegalAccessException {
-        add.addSingleItem(item);
+    public Class<?> getClz() {
+        return clz;
     }
 
-    public void addMultipleItem(List<T> items) throws ClassNotFoundException, IllegalAccessException {
-    add.addMultipleItem(items);
+    public <T> void addSingleItem(T item, User yossi) {
+        Add.addSingleItem(clz, item);
     }
 
-
-    public T findOneById(int id) throws ClassNotFoundException {
-       return (T) read.findOneById(id);
+    public void addMultipleItem(List<T> items) {
+        Add.addMultipleItem(clz, items);
     }
 
-    public <T,K> List<T> findByProperty (K property , String colName) throws ClassNotFoundException
+    public T readOneById(int id) {
+        return Read.readOneById(clz, id);
+    }
+
+    public <T,K> List<T> readByProperty (K property , String colName)
     {
-        return read.findByProperty(property,colName);
+        return Read.readByProperty(clz, property, colName);
     }
 
-    public <T,K> void deleteOneByProperty (K property , String colName) throws SQLException, ClassNotFoundException {
-        delete.deleteOneByProperty(property,colName);
+    public <T,K> void deleteOneByProperty (K property , String colName) {
+        Delete.deleteOneByProperty(clz, property,colName);
     }
 
     public <T,K> void updateOneByProperty (String colName, T property, String filterBy, K filterValue)
     {
-        update.updateOneByProperty(colName, property, filterBy, filterValue);
+        Update.updateOneByProperty(clz, colName, property, filterBy, filterValue);
     }
 }
 

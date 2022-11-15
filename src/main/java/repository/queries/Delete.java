@@ -2,81 +2,59 @@ package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entities.Primary;
-import org.example.entities.Unique;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Delete<T> extends Repository<T>{
-    public Delete(Class<T> clz) {
-        super(clz);
-    }
+public class Delete {
     private static Logger logger = LogManager.getLogger(Delete.class.getName());
+
+    private static Statement statement = null;
 
 
     //DELETE FROM table_name WHERE condition;
-    public <T,K> void deleteOneByProperty (K property , String colName) throws SQLException, ClassNotFoundException {
-        openConnectionToDB();
-        delete(property,colName);
-        closeConnectionToDB();
-    }
-
-    public <K> void delete (K property , String colName) {
-            String str= "delete from " +this.clz.getSimpleName().toLowerCase() + " where "+ colName+ " = ";
-
-            if (property.getClass()== String.class) str += "'"+ property+"'";
-            else str+= property;
-
-            System.out.println(str);
-
-        try {
-            statement= (Statement) con.createStatement();
-            statement.executeUpdate(str);
-            logger.info("Record is deleted from the table successfully..................");
+    public static <K> void deleteOneByProperty (Class<?> clz, K property , String colName) {
+        //Unique
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            String query = delete(clz, property, colName);
+            statement.executeUpdate(query);
         } catch (SQLException e) {
-            logger.error("SQL Exception");
+            logger.error("cant execute Update the statement SQL Exception");
             e.printStackTrace();
         }
-
-        }
-
-    public <K> void deleteMultipleItem (K property , String colName) throws SQLException, ClassNotFoundException, IllegalAccessException {
-        openConnectionToDB();
-        delete(property,colName);
-        closeConnectionToDB();
     }
 
-    public void deleteEntireTable(String tableName)  {
-        String str= "drop table "+tableName;
-        try {
-            statement= (Statement) con.createStatement();
-            statement.executeUpdate(str);
+    public static  <K> void deleteMultipleItem (Class<?> clz, K property , String colName) {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            String query = delete(clz, property, colName);
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            logger.error("cant execute Update the statement SQL Exception");
+            e.printStackTrace();
+        }
+    }
+
+    public static void deleteEntireTable(String tableName)  {
+        try(Connection con = ConnectionToDB.openConnectionToDB()) {
+            statement = con.createStatement();
+            String query = "drop table " + tableName;
+            statement.executeUpdate(query);
             logger.info("Table is deleted from the table successfully..................");
         } catch (SQLException e) {
-            logger.error("SQL Exception");
+            logger.error("cant execute Update the statement SQL Exception");
             e.printStackTrace();
         }
     }
-    private boolean isUnique(Field field){
-        Annotation[] annotations= field.getAnnotations();
-        for(Annotation annotation:annotations){
-                if(annotation instanceof Unique){
-                    return true;
-                }
-            }
-        return false;
+
+    public static <K> String delete (Class<?> clz, K property , String colName) {
+        String str= "delete from " + clz.getSimpleName().toLowerCase() + " where "+ colName+ " = ";
+
+        if (property.getClass()== String.class) str += "'"+ property+"'";
+        else str+= property;
+
+        return str;
     }
-
 }
-
-
-
-
-
-
-//    Single item deletion by any property (delete user with email x)
-//    Multiple item deletion by any property (delete all users called x)
-//    Delete entire table (truncate)
