@@ -3,15 +3,16 @@ package org.example.entities;
 import java.util.Objects;
 
 public class User {
-
-    private int id;
+    @Primary
+    private final int id;
     private String name;
+    @Unique
     private String email;
     private String password;
 
     public static class Builder{
         //Required Parameters
-        private int id;
+        private final int id;
         //Optional Parameters
         private String name=null;
         private String email=null;
@@ -44,7 +45,11 @@ public class User {
         this.password = builder.password;
     }
 
-    public User() {}
+
+
+    public User(int id) {
+        this.id = id;
+    }
 
     public User(int id, String name, String email, String password) {
         this.id = id;
@@ -74,21 +79,5 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, email, password);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
     }
 }
