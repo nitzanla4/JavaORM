@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Animal {
     @Primary
     private final int id;
+    @Unique
     private String name;
     private int age;
     private String habitat;
