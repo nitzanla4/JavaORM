@@ -51,8 +51,8 @@ public class Client {
 //        dbFacade.createTable.createNewTable(dog);
 //
 //
-//        System.out.println("-------------update by property: ");
-//        dbFacade.update.updateByProperty("Hadis", "name", 2);
+        System.out.println("-------------update by property: ");
+        dbFacade.updateOneByProperty("name", "Hadi", "name", "Hadis");
 //
 
     }

@@ -46,5 +46,9 @@ public class DBFacade<T> {
         delete.deleteOneByProperty(property,colName);
     }
 
+    public <T,K> void updateOneByProperty (String colName, T property, String filterBy, K filterValue)
+    {
+        update.updateOneByProperty(colName, property, filterBy, filterValue);
+    }
 }
 
