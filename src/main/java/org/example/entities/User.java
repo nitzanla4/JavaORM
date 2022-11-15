@@ -3,9 +3,10 @@ package org.example.entities;
 import java.util.Objects;
 
 public class User {
-
+    @Primary
     private final int id;
     private String name;
+    @Unique
     private String email;
     private String password;
 
@@ -46,7 +47,9 @@ public class User {
 
 
 
-    public User() {}
+    public User(int id) {
+        this.id = id;
+    }
 
     public User(int id, String name, String email, String password) {
         this.id = id;

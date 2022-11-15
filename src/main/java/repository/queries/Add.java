@@ -45,6 +45,8 @@ public class Add<T> extends Repository<T> {
             field.setAccessible(true);
             SQL_Statement += field.get(item) + "',";
         }
+        //TODO: SQL_Statement+=PRIMARY KEY(id field)
+
         SQL_Statement=SQL_Statement.substring(0, SQL_Statement.length() - 1); //remove last ,
         SQL_Statement += ")";
         return SQL_Statement;

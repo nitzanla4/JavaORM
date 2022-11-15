@@ -3,6 +3,7 @@ package org.example.entities;
 import java.util.Objects;
 
 public class Animal {
+    @Primary
     private final int id;
     private String name;
     private int age;
