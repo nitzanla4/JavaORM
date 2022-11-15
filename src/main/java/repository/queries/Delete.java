@@ -2,7 +2,11 @@ package repository.queries;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entities.Primary;
+import org.example.entities.Unique;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -56,8 +60,19 @@ public class Delete<T> extends Repository<T>{
             e.printStackTrace();
         }
     }
+    private boolean isUnique(Field field){
+        Annotation[] annotations= field.getAnnotations();
+        for(Annotation annotation:annotations){
+                if(annotation instanceof Unique){
+                    return true;
+                }
+            }
+        return false;
+    }
 
 }
+
+
 
 
 

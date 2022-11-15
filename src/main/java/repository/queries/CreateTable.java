@@ -10,6 +10,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class CreateTable<T> extends Repository<T> {
@@ -48,7 +49,7 @@ public class CreateTable<T> extends Repository<T> {
         String query = createQueryString(tableName,columns);
         return query;
     }
-
+    HashMap<String,String>
     private String createQueryString(String tableName, List<Column> columns) {
 
         String query = "create table " + tableName+ " ( ";
