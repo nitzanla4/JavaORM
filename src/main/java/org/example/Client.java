@@ -23,22 +23,22 @@ public class Client {
 
 //        System.out.println("-------------add new user: ");
         Add<User> add = new Add<>(User.class);
-        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
+//        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
 //        add.addSingleItem(yossi);
 //
-//        users.forEach(user-> System.out.println(user.toString()));
+        users.forEach(user-> System.out.println(user.toString()));
 
         System.out.println("-------------add list of users: ");
         List<User> userList = new ArrayList<>();
-        userList.add(new User(115, "Yaffa", "yaffa@gmail.com", "456789"));
-        userList.add(new User(116, "Yaffa", "sarah@gmail.com", "456789"));
-//    add.addMultipleItem(userList);
+        userList.add(new User(315, "Yaffa", "yaffa@gmail.com", "456789"));
+        userList.add(new User(316, "Yaffa", "sarah@gmail.com", "456789"));
+        add.addMultipleItem(userList);
 
         users.forEach(user -> System.out.println(user.toString()));
 
         System.out.println("--DELETE BY PROPERTY---------------");
         Delete<User> delete = new Delete<>(User.class);
-        delete.deleteOneByProperty(15, "id");
+        delete.deleteOneByProperty(139, "id");
 
 
         //System.out.println("----Multi DELETE-------------------------------------");
@@ -47,17 +47,17 @@ public class Client {
         /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
         createUserTable.createNewTable(yossi);*/
 //facade
-        DBFacade<User> dbFacade= new DBFacade<>(User.class);
-        dbFacade.add.addSingleItem(yossi);
-        dbFacade.delete.deleteEntireTable("animal");
-
-        CreateTable<Animal> createAnimalTable = new CreateTable<>(Animal.class);
-        Animal dog = new Animal(1, "Dogi", 3, "Home");
-        createAnimalTable.createNewTable(dog);
-
-        Update<User> update = new Update<>(User.class);
-        update.updateByProperty("Hadis", "name", 2);
-
+//        DBFacade<User> dbFacade= new DBFacade<>(User.class);
+//        dbFacade.add.addSingleItem(yossi);
+//        dbFacade.delete.deleteEntireTable("animal");
+//
+//        CreateTable<Animal> createAnimalTable = new CreateTable<>(Animal.class);
+//        Animal dog = new Animal(1, "Dogi", 3, "Home");
+//        createAnimalTable.createNewTable(dog);
+//
+//        Update<User> update = new Update<>(User.class);
+//        update.updateByProperty("Hadis", "name", 2);
+//
 
 
     }
