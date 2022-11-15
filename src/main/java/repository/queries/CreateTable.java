@@ -49,6 +49,7 @@ public class CreateTable<T> extends Repository<T> {
             query += col.getName() + " " + col.getType() +" , ";
         }
         query=query.substring(0, query.length()-2); //remove last ,
+        //TODO: query+="ADD PRIMARY KEY"+ (S_Id)
         query+= " ) ";
         return query;
     }
