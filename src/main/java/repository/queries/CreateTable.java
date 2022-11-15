@@ -62,8 +62,7 @@ public class CreateTable {
         if(field.getType().isAssignableFrom(String.class)){
             logger.info("String type cast to longtext");
             type="longtext";
-        }
-        if(!field.getType().isPrimitive()){
+        }else if(!field.getType().isPrimitive()){
             logger.info("field is not primitive type");
             type="json";
         }

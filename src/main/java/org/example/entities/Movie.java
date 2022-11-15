@@ -10,4 +10,8 @@ public class Movie {
         this.id = id;
         this.name = name;
     }
+
+    public Movie(int id) {
+        this.id = id;
+    }
 }

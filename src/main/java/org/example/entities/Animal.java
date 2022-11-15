@@ -28,7 +28,7 @@ public class Animal {
             this.name=name;
             return this;
         }
-        public Builder email(int age){
+        public Builder age(int age){
             this.age=age;
             return this;
         }
