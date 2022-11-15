@@ -38,7 +38,6 @@ public class Repository<T> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        logger.info("connection open! " +"to"+ url);
     }
 
     public static <T> T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
@@ -49,7 +48,6 @@ public class Repository<T> {
             field.setAccessible(true);
             field.set(item, resultSet.getObject(field.getName()));
         }
-        logger.info("object created! ");
         return item;
     }
 
@@ -77,7 +75,6 @@ public class Repository<T> {
                 statement.close();
             if (con != null)
                 con.close();
-            logger.info("connection close! ");
         } catch (Exception e) {
             logger.error("failed to close the connection");
         }

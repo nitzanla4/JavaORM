@@ -117,3 +117,53 @@
 2022-11-15 10:21:44,966 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
 2022-11-15 10:21:44,999 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
 2022-11-15 10:21:45,001 INFO    repository.queries.Repository - connection close! 
+2022-11-15 10:55:55,072 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 10:55:55,090 INFO    repository.queries.Repository - object created! 
+2022-11-15 10:55:55,091 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:07:12,017 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:07:12,032 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:11:59,644 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:11:59,665 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:11:59,667 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:12:18,672 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:12:18,688 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:07,740 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:07,762 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:14:07,764 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:07,790 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:07,800 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:27,774 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:27,790 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:27,811 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:27,823 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:14:27,825 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:14:27,826 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:44,312 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:44,327 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:14:44,349 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:14:44,355 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:18:51,638 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:18:51,657 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:18:51,659 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:18:51,680 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:18:51,683 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:18:51,684 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-15 11:18:51,685 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:18:51,705 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:18:51,716 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:19:25,002 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,017 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:19:25,038 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,043 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:19:25,068 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:19:25,082 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:20:39,120 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,134 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:20:39,156 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,161 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:20:39,181 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:20:39,193 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:21:41,211 INFO    repository.queries.Repository - connection open! tojdbc:mysql://localhost:3307/mydb
+2022-11-15 11:21:41,227 INFO    repository.queries.Repository - object created! 
+2022-11-15 11:21:41,229 INFO    repository.queries.Repository - connection close! 
+2022-11-15 11:27:10,902 INFO    repository.queries.Delete - Record is deleted from the table successfully..................
