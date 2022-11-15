@@ -39,12 +39,11 @@ public class Delete<T> extends Repository<T>{
 
         }
 
-//    public <K> void deleteMultipleItem (K property , String colName) throws SQLException, ClassNotFoundException, IllegalAccessException {
-//        openConnectionToDB();
-//
-//        close();
-//
-//    }
+    public <K> void deleteMultipleItem (K property , String colName) throws SQLException, ClassNotFoundException, IllegalAccessException {
+        openConnectionToDB();
+        delete(property,colName);
+        closeConnectionToDB();
+    }
 
     public void deleteEntireTable(String tableName)  {
         String str= "drop table "+tableName;
