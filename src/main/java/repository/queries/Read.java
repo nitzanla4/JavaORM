@@ -32,7 +32,7 @@ public class Read<T> extends Repository<T> {
             str += "'"+ property+"'";
         else str+= property;
 
-        System.out.println(str);
+        //System.out.println(str);
         return executeQuery(str);
     }
 
