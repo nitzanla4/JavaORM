@@ -4,10 +4,47 @@ import java.util.Objects;
 
 public class User {
 
-    private int id;
+    private final int id;
     private String name;
     private String email;
     private String password;
+
+    public static class Builder{
+        //Required Parameters
+        private final int id;
+        //Optional Parameters
+        private String name=null;
+        private String email=null;
+        private String password=null;
+
+        public Builder(int id){
+            this.id=id;
+        }
+        public Builder name(String name){
+            this.name=name;
+            return this;
+        }
+        public Builder email(String email){
+            this.email=email;
+            return this;
+        }
+        public Builder password(String password){
+            this.password=password;
+            return this;
+        }
+        public User build(){
+            return new User(this);
+        }
+    }
+
+    private  User(Builder builder){
+        this.id= builder.id;
+        this.name = builder.name;
+        this.email = builder.email;
+        this.password = builder.password;
+    }
+
+
 
     public User() {}
 
