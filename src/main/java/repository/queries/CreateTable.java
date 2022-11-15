@@ -3,6 +3,10 @@ package repository.queries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.entities.Column;
+import org.example.entities.Primary;
+import org.example.entities.Unique;
+
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,11 +23,12 @@ public class CreateTable<T> extends Repository<T> {
             openConnectionToDB();
             String query= getStringQuery(entity);
             statement.executeUpdate(query);
+            closeConnectionToDB();
+
         } catch (SQLException e) {
             logger.error("SQL Exception");
             e.printStackTrace();
         }
-        closeConnectionToDB();
     }
 
     private String getStringQuery(T entity)  {
@@ -32,10 +37,12 @@ public class CreateTable<T> extends Repository<T> {
 
         Field[] declaredFields = clz.getDeclaredFields();
         String type;
+        String annotation;
         for (Field field : declaredFields) {
             field.setAccessible(true);
             type=typeValidation(field);
-            columns.add(new Column(type,field.getName() ));
+            annotation=addAnnotation(field);
+            columns.add(new Column(type,field.getName(),annotation ));
         }
 
         String query = createQueryString(tableName,columns);
@@ -46,10 +53,13 @@ public class CreateTable<T> extends Repository<T> {
 
         String query = "create table " + tableName+ " ( ";
         for(Column col: columns){
-            query += col.getName() + " " + col.getType() +" , ";
+            query += col.getName() + " " + col.getType();
+            if(col.getAnnotation()!= null){
+                query +=" "+col.getAnnotation();
+            }
+            query +=" , ";
         }
         query=query.substring(0, query.length()-2); //remove last ,
-        //TODO: query+="ADD PRIMARY KEY"+ (S_Id)
         query+= " ) ";
         return query;
     }
@@ -62,6 +72,21 @@ public class CreateTable<T> extends Repository<T> {
             type="longtext";
         }
         return type;
+    }
+    private String addAnnotation(Field field){
+        Annotation[] annotations= field.getAnnotations();
+        for(Annotation annotation:annotations){
+            if(annotation instanceof Primary){
+                return "NOT NULL PRIMARY KEY AUTO_INCREMENT";
+            }
+            else{
+                if(annotation instanceof Unique){
+                    return "NOT NULL UNIQUE";
+                }
+            }
+
+        }
+        return null;
     }
 
 
