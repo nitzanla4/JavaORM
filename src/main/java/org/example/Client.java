@@ -1,6 +1,9 @@
 package org.example;
 
+import org.example.entities.Animal;
+import org.example.entities.User;
 import repository.*;
+import repository.queries.*;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -20,7 +23,7 @@ public class Client {
 
 //        System.out.println("-------------add new user: ");
         Add<User> add = new Add<>(User.class);
-//        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
+        User yossi=new User(101,"Yossi","yossi@gmail.com","456789");
 //        add.addSingleItem(yossi);
 //
 //        users.forEach(user-> System.out.println(user.toString()));
@@ -43,7 +46,10 @@ public class Client {
         System.out.println("-------------create new table: ");
         /*CreateTable<User> createUserTable= new CreateTable<>(User.class);
         createUserTable.createNewTable(yossi);*/
-
+//facade
+        DBFacade<User> dbFacade= new DBFacade<>(User.class);
+        dbFacade.add.addSingleItem(yossi);
+        dbFacade.delete.deleteEntireTable("animal");
 
         CreateTable<Animal> createAnimalTable = new CreateTable<>(Animal.class);
         Animal dog = new Animal(1, "Dogi", 3, "Home");
@@ -51,6 +57,9 @@ public class Client {
 
         Update<User> update = new Update<>(User.class);
         update.updateByProperty("Hadis", "name", 2);
+
+
+
     }
 }
 

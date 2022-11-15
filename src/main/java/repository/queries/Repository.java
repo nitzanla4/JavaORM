@@ -1,6 +1,8 @@
-package repository;
+package repository.queries;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -20,15 +22,23 @@ public class Repository<T> {
 
     private static Dotenv dotenv = Dotenv.load();
 
+    private static Logger logger = LogManager.getLogger(Repository.class.getName());
+
+
     public Repository(Class<T> clz) {
         this.clz = clz;
     }
 
-    public static void openConnectionToDB() throws ClassNotFoundException, SQLException {
+    public static void openConnectionToDB() throws ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://" + dotenv.get("HOST") + ":" + dotenv.get("PORT") + "/" + dotenv.get("DB");
-        con = DriverManager.getConnection(url, dotenv.get("USER"), dotenv.get("PASSWORD"));
-        statement = con.createStatement();
+        try {
+            con = DriverManager.getConnection(url, dotenv.get("USER"), dotenv.get("PASSWORD"));
+            statement = con.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        logger.info("connection open! " +"to"+ url);
     }
 
     public static <T> T createObject() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
@@ -39,10 +49,11 @@ public class Repository<T> {
             field.setAccessible(true);
             field.set(item, resultSet.getObject(field.getName()));
         }
+        logger.info("object created! ");
         return item;
     }
 
-    public static <T> List<T> executeQuery(String sqlQuery) throws SQLException, ClassNotFoundException {
+    public static <T> List<T> executeQuery(String sqlQuery) throws ClassNotFoundException {
         openConnectionToDB();
         List<T> results = new ArrayList<>();
         try {
@@ -50,7 +61,7 @@ public class Repository<T> {
             while (resultSet.next()) {
                 results.add((T) createObject());
             }
-            close();
+            closeConnectionToDB();
         } catch (Exception exception) {
             System.out.println(exception);
         }
@@ -58,7 +69,7 @@ public class Repository<T> {
     }
 
 
-    protected static void close() {
+    protected static void closeConnectionToDB() {
         try {
             if (resultSet != null)
                 resultSet.close();
@@ -66,7 +77,9 @@ public class Repository<T> {
                 statement.close();
             if (con != null)
                 con.close();
+            logger.info("connection close! ");
         } catch (Exception e) {
+            logger.error("failed to close the connection");
         }
     }
 }

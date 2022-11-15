@@ -1,23 +1,26 @@
-package repository;
+package repository.queries;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Delete<T> extends Repository<T>{
     public Delete(Class<T> clz) {
         super(clz);
     }
+    private static Logger logger = LogManager.getLogger(Delete.class.getName());
+
 
     //DELETE FROM table_name WHERE condition;
     public <T,K> void deleteOneByProperty (K property , String colName) throws SQLException, ClassNotFoundException {
         openConnectionToDB();
         delete(property,colName);
-        close();
+        closeConnectionToDB();
     }
 
-    public <K> void delete (K property , String colName) throws SQLException {
+    public <K> void delete (K property , String colName) {
             String str= "delete from " +this.clz.getSimpleName().toLowerCase() + " where "+ colName+ " = ";
 
             if (property.getClass()== String.class) str += "'"+ property+"'";
@@ -25,9 +28,14 @@ public class Delete<T> extends Repository<T>{
 
             System.out.println(str);
 
+        try {
             statement= (Statement) con.createStatement();
             statement.executeUpdate(str);
-            System.out.println("Record is deleted from the table successfully..................");
+            logger.info("Record is deleted from the table successfully..................");
+        } catch (SQLException e) {
+            logger.error("SQL Exception");
+            e.printStackTrace();
+        }
 
         }
 
@@ -38,12 +46,16 @@ public class Delete<T> extends Repository<T>{
 //
 //    }
 
-    public void deleteEntireTable() throws SQLException {
-        String str= "drop table " +this.clz.getSimpleName().toLowerCase();
-
-        statement= (Statement) con.createStatement();
-        statement.executeUpdate(str);
-        System.out.println("Table is deleted from the table successfully..................");
+    public void deleteEntireTable(String tableName)  {
+        String str= "drop table "+tableName;
+        try {
+            statement= (Statement) con.createStatement();
+            statement.executeUpdate(str);
+            logger.info("Table is deleted from the table successfully..................");
+        } catch (SQLException e) {
+            logger.error("SQL Exception");
+            e.printStackTrace();
+        }
     }
 
 }
