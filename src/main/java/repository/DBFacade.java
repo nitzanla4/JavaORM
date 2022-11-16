@@ -1,6 +1,5 @@
 package repository;
 
-import org.example.entities.User;
 import repository.queries.*;
 
 import java.util.List;
@@ -21,7 +20,7 @@ public class DBFacade<T> {
         Add.addSingleItem(clz, item);
     }
 
-    public void addMultipleItem(Class<?> clz,List<T> items) {
+    public void addMultipleItem(List<T> items) {
         Add.addMultipleItem(clz, items);
     }
 
@@ -49,6 +48,10 @@ public class DBFacade<T> {
 
     public <T> void deleteEntireTable(String tableName) {
         Delete.deleteEntireTable(tableName);
+    }
+
+    public <T> List<T> readAll() {
+        return Read.readAll(clz);
     }
 }
 

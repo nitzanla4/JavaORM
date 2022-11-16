@@ -408,3 +408,215 @@
 2022-11-15 22:09:24,375 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 22:09:24,379 INFO    repository.queries.CreateTable - String type cast to longtext
 2022-11-15 22:09:24,430 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:22:26,515 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:22:26,519 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:22:26,533 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:22:26,537 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:22:26,539 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:26:28,785 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:26:28,802 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:26:28,807 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:26:28,814 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:26:28,815 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:26:28,847 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:26:28,875 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 07:27:51,115 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:27:51,131 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:27:51,138 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:27:51,144 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:27:51,145 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:27:51,177 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:27:51,202 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,040 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,056 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,062 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,070 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:28:32,071 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:28:32,073 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,077 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:28:32,079 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:28:32,084 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 07:49:20,913 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:49:20,915 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:49:20,916 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:49:34,561 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:49:34,575 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:49:34,582 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:49:34,588 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:49:34,589 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:50:08,232 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:50:08,246 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:50:08,250 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:50:08,257 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:50:08,257 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:50:58,043 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:50:58,060 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:50:58,066 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:51:50,874 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:52:12,945 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:53:13,334 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:53:13,349 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:53:13,354 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:54:03,960 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:54:34,736 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:56:40,597 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:56:40,610 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:56:40,614 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:56:40,622 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:56:40,623 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:56:40,630 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:56:40,634 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:56:40,635 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:56:40,640 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,305 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,318 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,325 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,331 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:57:10,332 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:57:10,337 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,341 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:57:10,342 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:57:10,348 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,299 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,313 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,317 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,323 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:58:43,324 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:58:43,332 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,337 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 07:58:43,338 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 07:58:43,344 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,713 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,728 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,733 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,740 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:34:58,741 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:34:58,751 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,758 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:34:58,759 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:34:58,765 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,420 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,435 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,441 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,449 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:38:11,450 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:38:11,459 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,465 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:38:11,466 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:38:11,473 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,585 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,603 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,610 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,618 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:39:10,619 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:39:10,629 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,635 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:39:10,636 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:39:10,642 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 08:40:09,658 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:40:09,673 ERROR   repository.queries.Read - cant execute Update the statement SQL Exception
+2022-11-16 08:40:09,679 ERROR   repository.queries.Delete - cant execute Update the statement SQL Exception
+2022-11-16 08:40:09,686 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:40:09,687 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:40:09,735 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:40:09,763 ERROR   repository.queries.Update - cant execute Update the statement SQL Exception
+2022-11-16 08:51:30,557 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,559 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,561 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,633 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,633 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,642 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:51:30,648 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:51:30,649 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:52:23,246 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,248 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,250 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,273 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:52:23,289 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 08:52:23,327 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,327 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,329 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:52:23,333 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:52:23,333 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:53:47,133 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,136 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,137 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,161 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:53:47,177 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 08:53:47,218 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,218 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,219 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:53:47,223 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:53:47,223 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:55:51,367 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,369 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,371 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,395 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:55:51,413 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 08:55:51,455 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,456 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,456 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:55:51,460 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:55:51,462 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:56:23,746 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,749 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,750 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,771 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:56:23,791 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 08:56:23,833 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,833 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,834 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:56:23,838 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:56:23,839 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:57:09,155 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,158 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,160 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,186 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:57:09,205 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 08:57:09,247 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,247 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,248 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:57:09,252 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:57:09,253 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:58:02,828 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,831 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,832 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,854 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:58:02,918 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,918 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,919 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 08:58:02,923 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 08:58:02,923 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:03:28,234 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,236 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,237 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,255 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:03:28,278 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 09:03:28,330 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,331 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,332 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:03:28,336 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:03:28,337 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:04:07,300 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,304 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,307 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,333 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:04:07,353 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 09:04:07,358 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 09:04:07,407 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,407 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,408 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:04:07,413 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:04:07,414 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:04:07,426 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
+2022-11-16 09:06:12,939 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:12,942 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:12,944 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:12,966 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:06:12,987 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 09:06:12,991 ERROR   repository.queries.Add - cant executeUpdate the statement SQL Exception
+2022-11-16 09:06:13,037 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:13,037 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:13,063 INFO    repository.queries.CreateTable - String type cast to longtext
+2022-11-16 09:06:13,064 ERROR   repository.queries.CreateTable - cant execute Update the statement SQL Exception
+2022-11-16 09:06:13,071 INFO    repository.queries.Delete - Table is deleted from the table successfully..................
