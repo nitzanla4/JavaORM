@@ -1,3 +1,5 @@
+package repository.queries;
+
 import org.example.entities.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -25,6 +27,7 @@ public class ConnectionToDBTest {
             Statement stmt = con.createStatement();
             Assertions.assertTrue(stmt != null, "The application has connection ");
         }
+
 
 
 }
