@@ -56,7 +56,7 @@ public class CreateTable {
         return query;
     }
 
-    private static String typeValidation(Field field){
+    public static String typeValidation(Field field){
         String type=field.getType().getSimpleName();
 
         if(field.getType().isAssignableFrom(String.class)){
