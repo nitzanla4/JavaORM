@@ -50,7 +50,7 @@ public class Client {
 
         //db to movie:
         DBFacade<Movie> dbFacadeMovie= new DBFacade<>(Movie.class);
-        Movie movie = new Movie(10, "aaa");
+        Movie movie = new Movie(10, "terminator", 1998);
         dbFacadeMovie.createNewTable(movie);
 
         System.out.println("-------------delete entire table: ");
