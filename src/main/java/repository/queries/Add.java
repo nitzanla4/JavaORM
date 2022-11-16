@@ -44,17 +44,25 @@ public class Add {
     }
 
     private static <T> String createAddSQLStatement(Class<?> clz, T item) throws IllegalAccessException {
-        String SQL_Statement = String.format("INSERT INTO %s ", clz.getSimpleName().toLowerCase());
-        SQL_Statement += "VALUES(";
-
+        String SQL_Statement = String.format("INSERT INTO %s ", clz.getSimpleName().toLowerCase() + "(");
         Field[] declaredFields = clz.getDeclaredFields();
         for (Field field : declaredFields) {
             field.setAccessible(true);
             System.out.println(field + ", " + item);
-            SQL_Statement += field.get(item) + ",";
+            SQL_Statement += field.getName() + ",";
         }
         SQL_Statement=SQL_Statement.substring(0, SQL_Statement.length() - 1); //remove last ,
         SQL_Statement += ")";
+        SQL_Statement += "VALUES(";
+
+        for (Field field : declaredFields) {
+            field.setAccessible(true);
+            System.out.println(field + ", " + item);
+            SQL_Statement += "'"+ field.get(item) + "' ,";
+        }
+        SQL_Statement=SQL_Statement.substring(0, SQL_Statement.length() - 1); //remove last ,
+        SQL_Statement += ")";
+        System.out.println(SQL_Statement);
         return SQL_Statement;
     }
 }

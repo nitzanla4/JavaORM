@@ -40,19 +40,31 @@ public class CreateTable {
             field.setAccessible(true);
             type = typeValidation(field);
             annotation = addAnnotation(field);
-            columns.add(new Column(type, field.getName(), annotation ));
+            columns.add(new Column(type, field.getName(), annotation));
         }
         String query = createQueryString(tableName,columns);
         return query;
     }
 
     private static String createQueryString(String tableName, List<Column> columns) {
+        String pk = "";
+        String pk_name = " ";
         String query = "create table " + tableName+ " ( ";
         for(Column col: columns){
-            query += col.getName() + " " + col.getType() +" , ";
+            query += col.getName() + " " + col.getType();
+            if(col.getAnnotation() != null && col.getAnnotation().contains("UNIQUE")){
+                query += " NOT NULL UNIQUE";
+            } else if (col.getAnnotation() != null && col.getAnnotation().contains("PRIMARY")) {
+                query += " NOT NULL AUTO_INCREMENT";
+                pk_name = col.getName();
+                pk = " PRIMARY KEY (";
+            }
+            query += " , ";
         }
-        query=query.substring(0, query.length()-2); //remove last ,
+        //query=query.substring(0, query.length()-2); //remove last ,
+        query += pk + pk_name + ")";
         query+= " ) ";
+        System.out.println(query);
         return query;
     }
 
@@ -61,7 +73,7 @@ public class CreateTable {
 
         if(field.getType().isAssignableFrom(String.class)){
             logger.info("String type cast to longtext");
-            type="longtext";
+            type="varchar(200)";
         }else if(!field.getType().isPrimitive()){
             logger.info("field is not primitive type");
             type="json";
