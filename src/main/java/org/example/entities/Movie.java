@@ -5,10 +5,12 @@ public class Movie {
     private final int id;
     @Unique
     private String name;
+    private Integer year;
 
-    public Movie(int id, String name) {
+    public Movie(int id, String name,Integer year) {
         this.id = id;
         this.name = name;
+        this.year=year;
     }
 
     public Movie(int id) {
